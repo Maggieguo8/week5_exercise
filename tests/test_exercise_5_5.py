@@ -7,7 +7,7 @@ except ImportError:
 
 
 def test_rpcalc_import():
-    from adt_examples.rpcalc import RPCalc
+    from adt_examples.rpcalc import RPCalc  # noqaF401
 
 
 def test_push_implemented():
