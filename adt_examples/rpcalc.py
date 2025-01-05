@@ -5,8 +5,11 @@ from math import sin, cos
 
 class RPCalc:
 
-    def __init__(self, stack=[]):
-        self.stack = stack
+    def __init__(self, stack=None):
+        if stack is None:
+            self.stack = []
+        else:
+            self.stack = stack
 
     def push(self, n):
         if isinstance(n, Number):
